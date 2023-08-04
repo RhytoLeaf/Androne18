@@ -1,2 +1,8 @@
 # RhytoLeaf Drone
- html css js stack site to demonstrate visual effects
+HTML CSS JS stack 
+
+Site to demonstrate visual effects using 3 basic tools.
+
+
+ 
+ 
