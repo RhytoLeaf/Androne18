@@ -44,3 +44,24 @@ screen.onmouseenter = event => {
     iteration += 1 / 3;
   }, 30);
 }
+
+
+$(document).ready(function () {
+
+
+
+});
+
+/////////////////////////////////////////////////////////
+//
+//  change bkg - image of class='screen-image'
+//
+////////////////////////////////////////////////////////
+var droneLocations = [
+   "https://images.unsplash.com/photo-1513804277545-af322c6d7f44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
+  "https://images.unsplash.com/photo-1529974019031-b0cd38fd54fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80",
+  "https://images.unsplash.com/photo-1574795559465-7d953f8874d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1841&q=80"
+]
+ // Update background image of elements with class 'screen-image'
+ $('.screen-image').css('background-image', "url("+droneLocations[2]+")");
+    
