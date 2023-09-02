@@ -367,15 +367,12 @@ body {
 
 
 /* NEW Styles for responsive  */
-body {
-  margin: 0;
-  overflow: hidden;
-  font-family: "Rubik", sans-serif;
-}
 
 /* ... (Your existing .screen styles) ... */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 828px) {
+  /* Your CSS styles for iPhones XR, 11, and 12 */
+
   .screen {
     width: 100%;
     aspect-ratio: unset;
