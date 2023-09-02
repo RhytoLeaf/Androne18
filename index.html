@@ -38,6 +38,12 @@
 </body>
 
 <!-- <script src="script.js"></script> -->
+
+
+<!-- JQUERY -->
+<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+
+<!-- Drone Camera effects-->
 <script>
     /* -- Glow effect -- */
 
@@ -103,12 +109,41 @@
     //
     ////////////////////////////////////////////////////////
     var droneLocations = [
+        // LOCATION , ARTIST
         "https://images.unsplash.com/photo-1513804277545-af322c6d7f44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
+        // LOCATION , ARTIST
         "https://images.unsplash.com/photo-1529974019031-b0cd38fd54fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80",
-        "https://images.unsplash.com/photo-1574795559465-7d953f8874d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1841&q=80"
+        // LOCATION , ARTIST
+        "https://images.unsplash.com/photo-1574795559465-7d953f8874d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1841&q=80",
+        // LOCATION , ARTIST
+        "https://images.unsplash.com/photo-1515259387710-51e175f9ec6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2748&q=80",
+        // LOCATION , ARTIST
+        "https://images.unsplash.com/photo-1543997385-22fe0f397eeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2759&q=80",
+        // LOCATION , ARTIST
+        "https://images.unsplash.com/photo-1568971267198-2fd5fedeb39b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2255&q=80",
+        // LOCATION , ARTIST
+        "https://images.unsplash.com/photo-1542365775-6e6177a8e296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+
     ]
     // Update background image of elements with class 'screen-image'
-    $('.screen-image').css('background-image', "url(" + droneLocations[2] + ")");
+
+    //Handles drone locations
+    $(document).ready(function () {
+
+        //init drone to 1st in list
+        $('.screen-image').css('background-image', "url(" + droneLocations[0] + ")");
+
+
+        // Event to be triggered
+        function triggerEvent() {
+            var randomIndex = Math.floor(Math.random() * droneLocations.length);
+            // event to execute every 30 seconds goes here
+            $('.screen-image').css('background-image', "url(" + droneLocations[randomIndex] + ")");
+        }
+
+        // Call the triggerEvent function every 30 seconds (10000 milliseconds)
+        setInterval(triggerEvent, 30000);
+    });
 </script>
 
 <script>
@@ -118,7 +153,3 @@
 
     document.body.appendChild(script);
 </script>
-
-
-<!-- JQUERY -->
-<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>

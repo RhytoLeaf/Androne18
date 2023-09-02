@@ -143,10 +143,6 @@ body {
 
 .screen>.screen-image {
   /* background-image: url(''); */
-  /* background-image: url('https://images.unsplash.com/photo-1515259387710-51e175f9ec6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2748&q=80'); */
-  /* background-image: url('https://images.unsplash.com/photo-1543997385-22fe0f397eeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2759&q=80'); */
-  background-image: url('https://images.unsplash.com/photo-1568971267198-2fd5fedeb39b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2255&q=80');
-  /* background-image: url('https://images.unsplash.com/photo-1542365775-6e6177a8e296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); */
 
   
   height: 100%;
@@ -382,6 +378,7 @@ body {
   .screen-content {
     gap: 2rem;
     padding-bottom: 4rem;
+   
   }
 
   .screen>.screen-content>.screen-icon {
