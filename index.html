@@ -20,7 +20,7 @@
         <div class="screen-content">
             <img width='69%' height=auto class="screen-icon fa-brands" src='./images/rhyto-logo-icon.png' alt="Logo">
             <div class="screen-user">
-                <span class="name" data-value="Androne18">Androne18</span>
+                <span id="location-name" class="name" data-value="Androne18">Androne18</span>
                 <a class="link" href="rhytoleaf.ca" target="_blank">@rhytoleaf</a>
             </div>
         </div>
@@ -73,6 +73,9 @@
     const screen = document.querySelector(".screen"),
         name = document.querySelector(".name");
 
+
+
+
     screen.onmouseenter = event => {
         let iteration = 0;
 
@@ -109,21 +112,28 @@
     //
     ////////////////////////////////////////////////////////
     var droneLocations = [
-        // LOCATION , ARTIST
-        "https://images.unsplash.com/photo-1529974019031-b0cd38fd54fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80",
-        // LOCATION , ARTIST
-        "https://images.unsplash.com/photo-1574795559465-7d953f8874d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1841&q=80",
-        // LOCATION , ARTIST
-        "https://images.unsplash.com/photo-1515259387710-51e175f9ec6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2748&q=80",
-        // LOCATION , ARTIST
-        "https://images.unsplash.com/photo-1543997385-22fe0f397eeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2759&q=80",
-        // LOCATION , ARTIST
-        "https://images.unsplash.com/photo-1568971267198-2fd5fedeb39b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2255&q=80",
-        // LOCATION , ARTIST
-        "https://images.unsplash.com/photo-1542365775-6e6177a8e296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        // Luigi Colonna,
+        // New York City, USA
+        "https://images.unsplash.com/photo-1503590608726-d8f4ad9d53c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
+
+        // Kevin B Leigh, 
+        // Kilkenny Castle, Kilkenny, Ireland 
+        "https://images.unsplash.com/photo-1519412711294-ea7265523d5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80",
+
+        // Izuddin Helmi Adnan, 
+        // Kuala Lumpur, Malaysia
+        "https://images.unsplash.com/photo-1520851155845-6f90804b3636?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1827&q=80",
+
+        // Braeson Holland, 
+        // Ottawa, Canada
+        "https://images.unsplash.com/photo-1657300890159-c5677e5bdb60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1906&q=80",
+
+        // Daniel Diemer,
+        // Positano, Italy
+        "https://images.unsplash.com/photo-1683031423342-e247960a6dec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80"
 
     ]
-    // Update background image of elements with class 'screen-image'
+
 
     //Handles drone locations
     $(document).ready(function () {
